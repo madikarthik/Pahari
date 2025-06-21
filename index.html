@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pahari Goodness - Premium Himalayan products crafted with tradition and excellence. Discover authentic flavors from the pristine Himalayan valleys.">
+    <meta name="keywords" content="Himalayan products, organic food, premium quality, mountain products, traditional crafts">
+    <title>Pahari Goodness - Premium Himalayan Products</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner"></div>
+        <p>Loading Pahari Goodness...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navigation" class="navigation" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">
+                <i data-lucide="mountain" class="brand-icon" aria-hidden="true"></i>
+                <span class="brand-text">Pahari Goodness</span>
+            </a>
+
+            <div class="nav-links desktop-only">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#blog" class="nav-link">Blog</a>
+            </div>
+
+            <div class="nav-contact desktop-only">
+                <a href="mailto:hello@paharigoodness.com" class="contact-link" aria-label="Email us">
+                    <i data-lucide="mail" size="18"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+
+            <button class="menu-toggle mobile-only" id="menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+                <i data-lucide="menu" size="24"></i>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-content">
+                <div class="mobile-nav-links">
+                    <a href="#home" class="mobile-nav-link active">Home</a>
+                    <a href="#about" class="mobile-nav-link">About Us</a>
+                    <a href="#products" class="mobile-nav-link">Products</a>
+                    <a href="#blog" class="mobile-nav-link">Blog</a>
+                </div>
+                
+                <div class="mobile-contact">
+                    <a href="mailto:hello@paharigoodness.com" class="mobile-contact-link">
+                        <i data-lucide="mail" size="20"></i>
+                        <span>hello@paharigoodness.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <!-- Hero Section -->
+            <section id="home" class="hero" role="banner">
+                <div class="hero-background" id="hero-background">
+                    <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg" alt="Majestic Himalayan mountains" class="hero-image">
+                    <div class="hero-overlay"></div>
+                </div>
+                
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-line fade-in-up">Pahari</span>
+                            <span class="title-line fade-in-up delay-1">Goodness</span>
+                        </h1>
+                        <p class="hero-subtitle fade-in-up delay-2">
+                            Premium Himalayan products crafted with tradition and excellence
+                        </p>
+                        <div class="hero-cta fade-in-up delay-3">
+                            <a href="#products" class="cta-button primary">
+                                Discover Our Products
+                            </a>
+                            <a href="#story" class="cta-button secondary">
+                                Our Story
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator">
+                    <i data-lucide="chevron-down" class="scroll-arrow"></i>
+                    <span class="scroll-text">Scroll to explore</span>
+                </div>
+            </section>
+
+            <!-- Product Showcase -->
+            <section id="products" class="product-showcase">
+                <div class="container">
+                    <header class="section-header">
+                        <h2 class="section-title">Our Premium Collection</h2>
+                        <p class="section-subtitle">
+                            Discover the finest products from the Himalayan region, 
+                            each carefully selected for quality and authenticity.
+                        </p>
+                    </header>
+
+                    <div class="products-grid-home" id="products-grid-home">
+                        <!-- Products will be loaded here by JavaScript -->
+                    </div>
+
+                    <div class="showcase-cta">
+                        <a href="#products" class="view-all-btn" data-page="products">
+                            View All Products
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Brand Story -->
+            <section id="story" class="brand-story">
+                <div class="container">
+                    <div class="story-intro" data-section-id="0">
+                        <div class="story-content">
+                            <h2 class="section-title">Our Heritage Story</h2>
+                            <div class="story-text">
+                                <p class="story-paragraph">
+                                    Born in the pristine valleys of the Himalayas, Pahari Goodness represents 
+                                    more than just premium products—it's a celebration of mountain culture, 
+                                    traditional wisdom, and the pure essence of nature.
+                                </p>
+                                <blockquote class="story-quote">
+                                    "Every jar, every packet carries the soul of the mountains 
+                                    and the love of our people."
+                                    <cite>— Founder, Pahari Goodness</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="story-image">
+                            <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg" alt="Himalayan landscape with traditional village" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="story-mission" data-section-id="1">
+                        <div class="story-image">
+                            <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg" alt="Traditional honey harvesting in mountains" loading="lazy">
+                        </div>
+                        <div class="story-content">
+                            <h3 class="story-subtitle">Our Mission</h3>
+                            <p class="story-paragraph">
+                                We bridge the gap between ancient mountain traditions and modern quality 
+                                standards, bringing you products that honor both heritage and excellence. 
+                                Our mission extends beyond commerce—we're preserving a way of life.
+                            </p>
+                            <div class="story-stats">
+                                <div class="stat">
+                                    <span class="stat-number">50+</span>
+                                    <span class="stat-label">Partner Families</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">Organic Products</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">25+</span>
+                                    <span class="stat-label">Years Experience</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-features" data-section-id="2">
+                        <h3 class="section-title">What Sets Us Apart</h3>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <i data-lucide="heart" class="feature-icon"></i>
+                                <h4 class="feature-title">Crafted with Love</h4>
+                                <p class="feature-description">Every product is made with care and traditional methods passed down through generations.</p>
+                            </div>
+                            <div class="feature-card">
+                                <i data-lucide="leaf" class="feature-icon"></i>
+                                <h4 class="feature-title">Naturally Pure</h4>
+                                <p class="feature-description">We source only the finest natural ingredients from the pristine Himalayan environment.</p>
+                            </div>
+                            <div class="feature-card">
+                                <i data-lucide="users" class="feature-icon"></i>
+                                <h4 class="feature-title">Community Focused</h4>
+                                <p class="feature-description">Supporting local communities and preserving traditional craftsmanship methods.</p>
+                            </div>
+                            <div class="feature-card">
+                                <i data-lucide="award" class="feature-icon"></i>
+                                <h4 class="feature-title">Premium Quality</h4>
+                                <p class="feature-description">Our commitment to excellence ensures every product meets the highest standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section-modern">
+                <div class="container">
+                    <div class="contact-layout">
+                        <!-- Contact Information Card -->
+                        <div class="contact-info-card">
+                            <h2 class="contact-card-title">GET IN TOUCH</h2>
+                            <p class="contact-card-subtitle">
+                                We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                            </p>
+                            
+                            <div class="contact-details">
+                                <div class="contact-detail-item">
+                                    <div class="contact-detail-icon">
+                                        <i data-lucide="mail" size="20"></i>
+                                    </div>
+                                    <div class="contact-detail-text">
+                                        <span class="contact-detail-value">hello@paharigoodness.com</span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail-item">
+                                    <div class="contact-detail-icon">
+                                        <i data-lucide="phone" size="20"></i>
+                                    </div>
+                                    <div class="contact-detail-text">
+                                        <span class="contact-detail-value">+91 98765 43210</span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail-item">
+                                    <div class="contact-detail-icon">
+                                        <i data-lucide="map-pin" size="20"></i>
+                                    </div>
+                                    <div class="contact-detail-text">
+                                        <span class="contact-detail-value">Himachal Pradesh, India</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="whatsapp-contact-btn" id="whatsapp-btn" aria-label="Contact us on WhatsApp">
+                                <i data-lucide="message-circle" size="20"></i>
+                                Chat on WhatsApp
+                            </button>
+                        </div>
+
+                        <!-- Contact Form Card -->
+                        <div class="contact-form-card">
+                            <h3 class="form-card-title">SAY SOMETHING</h3>
+                            
+                            <form class="modern-contact-form" id="contact-form" novalidate>
+                                <div class="form-row">
+                                    <div class="modern-form-group">
+                                        <input type="text" id="name" name="name" class="modern-form-input" placeholder="Your Name..." required>
+                                        <span class="modern-error-message" id="name-error" role="alert"></span>
+                                    </div>
+
+                                    <div class="modern-form-group">
+                                        <input type="email" id="email" name="email" class="modern-form-input" placeholder="Your Mail..." required>
+                                        <span class="modern-error-message" id="email-error" role="alert"></span>
+                                    </div>
+                                </div>
+
+                                <div class="modern-form-group">
+                                    <input type="text" id="subject" name="subject" class="modern-form-input" placeholder="Subject..." required>
+                                    <span class="modern-error-message" id="subject-error" role="alert"></span>
+                                </div>
+
+                                <div class="modern-form-group">
+                                    <textarea id="message" name="message" rows="4" class="modern-form-textarea" placeholder="Message..." required></textarea>
+                                    <span class="modern-error-message" id="message-error" role="alert"></span>
+                                </div>
+
+                                <button type="submit" class="modern-submit-button" id="submit-btn">
+                                    SEND
+                                </button>
+
+                                <div id="submit-message" class="modern-submit-message" role="alert" style="display: none;"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Us Page -->
+        <div id="about-page" class="page">
+            <!-- About Hero Section -->
+            <section class="about-hero">
+                <div class="about-hero-background">
+                    <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg" alt="Himalayan landscape" class="about-hero-image">
+                    <div class="about-hero-overlay"></div>
+                </div>
+                <div class="about-hero-content">
+                    <h1 class="about-hero-title">About Pahari Goodness</h1>
+                    <p class="about-hero-subtitle">
+                        Preserving Himalayan traditions while delivering premium quality products to the world
+                    </p>
+                </div>
+            </section>
+
+            <div class="container">
+                <!-- Our Story -->
+                <section class="about-story" data-section-id="0">
+                    <div class="about-content-grid">
+                        <div class="about-text">
+                            <h2 class="section-title">Our Story</h2>
+                            <p class="about-paragraph">
+                                Founded in the pristine valleys of Himachal Pradesh, Pahari Goodness began as a 
+                                passionate endeavor to share the authentic flavors and traditional wisdom of the 
+                                Himalayan region with the world. What started as a small family business has grown 
+                                into a trusted brand that represents the very essence of mountain purity.
+                            </p>
+                            <p class="about-paragraph">
+                                Our journey is rooted in respect for nature, commitment to quality, and deep 
+                                appreciation for the communities that have preserved these ancient traditions. 
+                                Every product we offer carries with it the soul of the mountains and the 
+                                dedication of the people who call these peaks home.
+                            </p>
+                            <blockquote class="about-quote">
+                                "We don't just sell products; we share a way of life that honors both 
+                                tradition and innovation."
+                                <cite>— Rajesh Kumar, Founder</cite>
+                            </blockquote>
+                        </div>
+                        <div class="about-image">
+                            <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg" alt="Traditional honey harvesting" loading="lazy">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Mission & Vision -->
+                <section class="mission-vision" data-section-id="1">
+                    <div class="mission-vision-grid">
+                        <div class="mission-card">
+                            <i data-lucide="globe" class="mission-icon"></i>
+                            <h3>Our Mission</h3>
+                            <p>
+                                To bring the finest Himalayan products to global markets while supporting 
+                                local communities and preserving traditional practices that have sustained 
+                                these mountain regions for centuries.
+                            </p>
+                        </div>
+                        <div class="vision-card">
+                            <i data-lucide="mountain" class="vision-icon"></i>
+                            <h3>Our Vision</h3>
+                            <p>
+                                To be the world's most trusted source of authentic Himalayan products, 
+                                creating a sustainable bridge between ancient wisdom and modern needs 
+                                while empowering mountain communities.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Values -->
+                <section class="about-values" data-section-id="2">
+                    <h2 class="section-title">Our Values</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <i data-lucide="heart" class="value-icon"></i>
+                            <h4 class="value-title">Authenticity</h4>
+                            <p class="value-description">We preserve traditional methods and authentic flavors that have been passed down through generations.</p>
+                        </div>
+                        <div class="value-card">
+                            <i data-lucide="leaf" class="value-icon"></i>
+                            <h4 class="value-title">Sustainability</h4>
+                            <p class="value-description">Our practices support environmental conservation and sustainable harvesting methods.</p>
+                        </div>
+                        <div class="value-card">
+                            <i data-lucide="users" class="value-icon"></i>
+                            <h4 class="value-title">Community</h4>
+                            <p class="value-description">We work directly with local communities, ensuring fair trade and supporting livelihoods.</p>
+                        </div>
+                        <div class="value-card">
+                            <i data-lucide="award" class="value-icon"></i>
+                            <h4 class="value-title">Quality</h4>
+                            <p class="value-description">Every product undergoes rigorous quality checks to meet international standards.</p>
+                        </div>
+                        <div class="value-card">
+                            <i data-lucide="mountain" class="value-icon"></i>
+                            <h4 class="value-title">Heritage</h4>
+                            <p class="value-description">We honor the rich cultural heritage of the Himalayan region in everything we do.</p>
+                        </div>
+                        <div class="value-card">
+                            <i data-lucide="shield" class="value-icon"></i>
+                            <h4 class="value-title">Trust</h4>
+                            <p class="value-description">Building lasting relationships through transparency, reliability, and consistent quality.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Timeline -->
+                <section class="about-timeline" data-section-id="3">
+                    <h2 class="section-title">Our Journey</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">1998</span>
+                                <h4 class="timeline-title">Foundation</h4>
+                                <p class="timeline-description">Started as a small family business in Himachal Pradesh</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2005</span>
+                                <h4 class="timeline-title">Organic Certification</h4>
+                                <p class="timeline-description">Achieved organic certification for all our products</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2012</span>
+                                <h4 class="timeline-title">National Recognition</h4>
+                                <p class="timeline-description">Received national award for sustainable practices</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2018</span>
+                                <h4 class="timeline-title">International Expansion</h4>
+                                <p class="timeline-description">Began exporting to international markets</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2023</span>
+                                <h4 class="timeline-title">Digital Transformation</h4>
+                                <p class="timeline-description">Launched online platform to reach global customers</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Impact -->
+                <section class="about-team" data-section-id="4">
+                    <h2 class="section-title">Our Impact</h2>
+                    <div class="impact-stats">
+                        <div class="impact-stat">
+                            <span class="impact-number">50+</span>
+                            <span class="impact-label">Partner Families</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number">100%</span>
+                            <span class="impact-label">Organic Products</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number">25+</span>
+                            <span class="impact-label">Years Experience</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number">15+</span>
+                            <span class="impact-label">Countries Served</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Products Page -->
+        <div id="products-page" class="page">
+            <!-- Products Hero Section -->
+            <section class="products-hero">
+                <div class="products-hero-background">
+                    <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg" alt="Himalayan products" class="products-hero-image">
+                    <div class="products-hero-overlay"></div>
+                </div>
+                <div class="products-hero-content">
+                    <h1 class="products-hero-title">Our Premium Collection</h1>
+                    <p class="products-hero-subtitle">
+                        Discover authentic Himalayan products, each carefully selected for quality and tradition
+                    </p>
+                </div>
+            </section>
+
+            <div class="container">
+                <!-- Category Filter -->
+                <section class="category-filter">
+                    <h2 class="section-title">Browse by Category</h2>
+                    <div class="category-buttons" id="category-buttons">
+                        <!-- Categories will be loaded here by JavaScript -->
+                    </div>
+                </section>
+
+                <!-- Products Grid -->
+                <section class="products-section">
+                    <div class="products-grid" id="products-grid">
+                        <!-- Products will be loaded here by JavaScript -->
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Blog Page -->
+        <div id="blog-page" class="page">
+            <div class="page-container">
+                <div class="container">
+                    <div class="page-header">
+                        <h1 class="page-title">Blog</h1>
+                        <p class="page-subtitle">Coming Soon</p>
+                        <p>Our blog featuring stories from the Himalayas, product insights, and traditional recipes will be available soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="container">
+            <div class="footer-main-content">
+                <!-- Brand Section -->
+                <div class="footer-brand-section">
+                    <div class="footer-brand-logo">
+                        <i data-lucide="mountain" class="footer-logo-icon"></i>
+                        <span class="footer-brand-name">PAHARI GOODNESS</span>
+                    </div>
+                    <p class="footer-brand-description">
+                        Bringing you the finest Himalayan products, crafted with tradition and 
+                        excellence. We preserve the authentic flavors and wisdom of the mountains 
+                        while supporting local communities.
+                    </p>
+                    <div class="footer-social-links">
+                        <a href="#" aria-label="Facebook" class="footer-social-link">
+                            <i data-lucide="facebook" size="20"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="footer-social-link">
+                            <i data-lucide="instagram" size="20"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="footer-social-link">
+                            <i data-lucide="twitter" size="20"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="footer-social-link">
+                            <i data-lucide="youtube" size="20"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- About Us Section -->
+                <div class="footer-section">
+                    <h4 class="footer-section-title">ABOUT US</h4>
+                    <p class="footer-about-text">
+                        Pahari Goodness represents more than just premium products—it's a celebration 
+                        of mountain culture, traditional wisdom, and the pure essence of nature.
+                    </p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="footer-links-grid">
+                    <div class="footer-links-column">
+                        <a href="#home" class="footer-nav-link">HOME</a>
+                        <a href="#about" class="footer-nav-link">ABOUT US</a>
+                        <a href="#products" class="footer-nav-link">PRODUCTS</a>
+                        <a href="#blog" class="footer-nav-link">BLOG</a>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <a href="#" class="footer-nav-link">PORTFOLIO</a>
+                        <a href="#" class="footer-nav-link">SERVICES</a>
+                        <a href="#" class="footer-nav-link">TEAM MEMBERS</a>
+                        <a href="#" class="footer-nav-link">CLIENT</a>
+                        <a href="#" class="footer-nav-link">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">
+                        © <span id="current-year"></span> Pahari Goodness. All rights reserved.
+                    </p>
+                    <div class="footer-certifications">
+                        <span class="footer-certification">Organic Certified</span>
+                        <span class="footer-certification">FSSAI Approved</span>
+                        <span class="footer-certification">Export Quality</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">
+        <i data-lucide="chevron-up" size="24"></i>
+    </button>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Close details">×</button>
+            
+            <div class="modal-body">
+                <!-- Image Section -->
+                <div class="modal-image-section">
+                    <img id="modal-main-image" src="" alt="" class="modal-main-image">
+                    <div class="modal-image-thumbnails" id="modal-thumbnails">
+                        <!-- Thumbnails will be loaded here -->
+                    </div>
+                </div>
+
+                <!-- Info Section -->
+                <div class="modal-info-section">
+                    <div class="modal-product-header">
+                        <div class="modal-product-code" id="modal-product-code"></div>
+                        <h2 class="modal-product-title" id="modal-product-title"></h2>
+                        <div class="modal-product-price" id="modal-product-price">
+                            <span class="currency">RS</span>
+                            <span id="modal-price-value"></span>
+                        </div>
+                        <div class="modal-rating" id="modal-rating">
+                            <!-- Rating stars will be loaded here -->
+                        </div>
+                    </div>
+
+                    <div class="modal-section">
+                        <h4 class="modal-section-title">Benefits</h4>
+                        <ul class="modal-benefits-list" id="modal-benefits">
+                            <!-- Benefits will be loaded here -->
+                        </ul>
+                    </div>
+
+                    <div class="modal-certifications" id="modal-certifications">
+                        <!-- Certifications will be loaded here -->
+                    </div>
+
+                    <div class="modal-contact-section">
+                        <h4 class="modal-contact-title">Interested in this product?</h4>
+                        <div class="modal-contact-buttons">
+                            <button class="modal-contact-btn phone" id="modal-phone-btn">
+                                <i data-lucide="phone" size="18"></i>
+                                Call Us
+                            </button>
+                            <button class="modal-contact-btn email" id="modal-email-btn">
+                                <i data-lucide="mail" size="18"></i>
+                                Email Us
+                            </button>
+                            <button class="modal-contact-btn whatsapp" id="modal-whatsapp-btn">
+                                <i data-lucide="message-circle" size="18"></i>
+                                WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

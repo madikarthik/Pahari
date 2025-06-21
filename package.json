@@ -1,0 +1,24 @@
+{
+  "name": "pahari-goodness",
+  "version": "1.0.0",
+  "description": "Premium Himalayan products website - vanilla HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "himalayan",
+    "organic",
+    "products",
+    "honey",
+    "tea",
+    "spices"
+  ],
+  "author": "Pahari Goodness",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
